@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="information"><span class="number">+442078333333</span> <span>| Lines are open Monday to Saturday 11am-7pm; Sunday 11.30am-6pm</span></div>
+<div class="container_about">
+<div class="about">
+<div class="location">
+    <h3>LOCATION</h3>
+</div>
+<div class="address">    
+    <p>
+        Fifth Floor <br>
+        87–135 Brompton Road <br>
+        Knightsbridge <br> 
+        London SW1X 7XL <br>
+        Access via Hans Crescen
+    </p>
+</div>
+<div class="days">
+    <div class="day"><span>Monday</span><span>10am - 9pm</span></div>
+    <div class="day"><span>Tuesday</span><span>10am - 9pm</span></div>
+    <div class="day"><span>Wednesday</span><span>10am - 9pm</span></div>
+    <div class="day"><span>Thersday</span><span>10am - 9pm</span></div>
+    <div class="day"><span>Friday</span><span>10am - 9pm</span></div>
+    <div class="day"><span>Saturday</span><span>10am - 9pm</span></div>
+    <div class="day"><span>Sunday</span><span>11am - 9pm</span></div>
+</div>
+<div class="opening">
+    <h3 class="hours">OPENING HOURS</h3>
+</div>
+</div>
+</div>
+<div class="bottom"><span class="ask">You can leave a request for an appointment</span><a class="button" href="{% url 'home' %}"><div class="leave">Leave</div></a></div>
+{% endblock %} 

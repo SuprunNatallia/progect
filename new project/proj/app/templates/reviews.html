@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="wrapper">
+    <div class="comments">
+    <div class="form">
+    <div class="underline"><h2>LEAVE YOUR COMMENT HERE</h2></div><br>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p}}
+                  
+        <button class="leave_comment" type="submit">leave comment</button>
+    </form>
+    </div>
+    <div class="what">WHAT <br>DO YOU <br>THINK?</div>
+    </div>
+    </div>
+    {% for x in comments %}
+        <div class="comment"><span>{{ x.name }}</span><br><span>{{ x.issued }}</span><br><span>{{ x.email }}</span><br><span>{{ x.text }}</span></div>
+    {% endfor %}
+    
+
+{% endblock %} 

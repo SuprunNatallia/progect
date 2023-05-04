@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="images">
+    <div class="information"><span class="number">+442078333333</span> <span>| Lines are open Monday to Saturday 11am-7pm; Sunday 11.30am-6pm</span></div>
+    <div class="details">
+    <h3 class="sign">Leave your details for an appointment</h3>
+    <form class="message" method="post">
+        {% csrf_token %}
+        {{ form.as_p}}
+        <button class="call" type="submit">Call me</button>
+    </form>
+    </div>
+    </div>
+    
+{% endblock %}  

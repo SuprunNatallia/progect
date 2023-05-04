@@ -1,0 +1,315 @@
+header{
+    height: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.images{
+    background-image: url(../img/back1.jpg);
+    background-size: cover;
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+} 
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: space-between;
+    font-size: 1.5em;
+}
+
+hr{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 10%;
+    margin-inline-end: 10%;
+    border-width: 1px;
+    
+    border-color: rgb(171, 142, 102);
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3em;
+}
+.service{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+.title{
+    width: 80%;
+    height: 50px;
+    background-color:rgb(171, 142, 102);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-size: 2.5em;
+
+}
+.internal{
+    width: 80%;
+    height: 45px;
+    background-color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5em;
+    cursor: pointer;
+    border-bottom-width: 1px; 
+    border-bottom-style: ridge; 
+    border-bottom-color: rgb(196, 164, 120);
+}
+.internal:hover{
+    background-color: rgb(149, 123, 88);
+    color: white;
+}
+.appointment{
+    position: relative;
+    margin-inline-start: 10%;
+    margin-top: 5%;
+    width: 30%;
+    /* background-color:rgb(170 172 174); */
+    border-color: white;
+   }
+.text{
+    font-size: 1.3em;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:visited{
+    color: black;
+}
+a:hover{
+    color: rgb(171, 142, 102);
+}
+
+.special{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+.specialists{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 30%;
+    
+}
+.image{
+    width: 60%;
+}
+.subtitle{
+    text-align: center;
+    background-color: rgb(171, 142, 102);
+    padding: 2%;
+           
+}
+
+.comment{
+    width: 60%;
+    height: 20%;
+    background-color:rgb(236 241 244);
+    margin-left: 10%;
+    margin-top: 3%;
+    overflow: auto;
+    padding: 1%;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    border-left-style: groove;
+    border-right-style: groove;
+    border-left-color: rgb(171, 142, 102);
+    border-right-color: rgb(171, 142, 102);
+}
+.container_about{
+    display: flex;
+    justify-content: center;
+}
+.location{
+    background-color: black;
+    color: white;
+    width: 25%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+.opening{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 25%;
+    height: 300px;
+}
+.days{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    background-color: white;
+    width: 40%;
+}
+.address{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 40%;
+    border-bottom-style: ridge;
+    border-bottom-color: rgb(171, 142, 102);
+
+}     
+.day{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.hours{
+    text-align: center;
+}
+.information{
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+    font-size: 1.3em;
+}
+.bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    margin: 2%;
+}
+.ask{
+    font-size: 1.3em;
+}
+.leave{
+    background-color: rgb(171, 142, 102);
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3em;
+    margin-left: 5%;
+}
+div.leave:hover{
+    background-color:rgb(149, 123, 88);
+    color: white;
+}
+.number{
+    color: rgb(171, 142, 102);
+}
+.details{
+    margin-left: 55%;
+    margin-top: 5%;
+    border-style: solid;
+    border-radius: 3%;
+    border-color: rgb(184 189 193);
+    padding: 3%;
+    width: 30%;
+}
+.thanks{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 5%;
+    margin-right: 7%;
+    text-align: center;
+}
+.thank_you{
+    font-size: 1.7em;
+    color: rgb(171, 142, 102);
+}
+.what{
+    background-color: rgb(171, 142, 102);
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 3em;
+    text-align: center;
+}
+.comments{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-left-style: groove;
+    border-right-style: groove;
+    border-left-color: rgb(171, 142, 102);
+    border-right-color: rgb(171, 142, 102);
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+}
+.call{
+    background-color: rgb(171, 142, 102);
+    border: none;
+    height: 30px;
+    width: 70px;
+}
+.call:hover{
+    background-color:rgb(143, 119, 86);
+}
+.leave_comment{
+    background-color: rgb(171, 142, 102);
+    border: none;
+    height: 30px;
+}
+.leave_comment:hover{
+    background-color:rgb(143, 119, 86);
+}
+.underline{
+    border-bottom-style: ridge;
+    border-bottom-color: rgb(236 241 244);
+}
+input[type="text" i]{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    
+}
+input[type="email" i]{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+input[type="tel" i]{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+.sign{
+    color: white;
+}

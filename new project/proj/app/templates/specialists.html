@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 class="subtitle">OUR SPECIALISTS</h1>
+<div class="special">
+{% for x in specialists %}
+
+    <div class="specialists">
+        <img class="image" src="{{ x.photo.url }}">
+        <span>{{ x.name }}</span>
+        <span>{{ x.position }}</span>
+        <span>{{ x.additional }}</span>
+    </div>
+{% endfor %}
+</div>
+<div class="bottom"><span class="ask">You can leave a request for an appointment</span><a class="button" href="{% url 'home' %}"><div class="leave">Leave</div></a></div>
+{% endblock %} 

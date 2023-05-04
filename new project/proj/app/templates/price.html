@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="service">
+        <div class="title">Massage</div>
+        {% for x in massage %}
+            <div class="internal"><span>{{ x.service }}</span> <span>{{ x.price }}</span></div>
+        {% endfor %}
+        <div class="title">Cosmetology</div>
+        {% for x in cosmetology %}
+            <div class="internal"><span>{{ x.service }}</span> <span>{{ x.price }}</span></div>
+        {% endfor %}
+    </div>
+    <div class="bottom"><span class="ask">You can leave a request for an appointment</span><a class="button" href="{% url 'home' %}"><div class="leave">Leave</div></a></div>
+{% endblock %}    
+        
+    

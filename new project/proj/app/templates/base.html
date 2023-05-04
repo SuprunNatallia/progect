@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'app/css/style.css'%}">
+</head>
+
+<body>
+    <header>
+        <div class="name"><a href="{% url 'home' %}"><span>ESTHETIC</span></a></div>
+        
+    </header>
+    <hr>
+    <div class="container">
+        <div><a href="{% url 'about' %}"><span>About</span></a></div>
+        <div><a href="{% url 'specialists' %}"><span>Specialists</span></a></div>
+        <div><a href="{% url 'price' %}"><span>Price</span></a></div>
+        <div><a href="{% url 'reviews' %}"><span>Reviews</span></a></div>
+    </div>
+    <hr>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
